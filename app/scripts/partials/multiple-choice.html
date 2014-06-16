@@ -1,0 +1,14 @@
+<div ng-repeat="question in filteredQuestion(4)">
+  {{question._id}}. {{question.question}}
+  <div class="radio" ng-repeat="choice in question.choices">
+    <label>
+      <input
+          name="_id{{question._id}}"
+          type="radio"
+          value="{{choice._id}}"
+          ng-model="quiz.userChoiceId4"/>
+      {{choice.choice}}
+    </label>
+  </div>
+</div>
+</br>

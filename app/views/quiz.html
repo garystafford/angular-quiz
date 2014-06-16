@@ -1,25 +1,12 @@
-<div ng-controller="QuizCtrl">
+<div>
   <form novalidate class="simple-form">
-    <div ng-repeat="item in filteredQuestion(4)">
-      {{item._id}}. {{item.question}}
-      <div class="radio" ng-repeat="choice in item.choices">
+    <quiz-multiplechoice></quiz-multiplechoice>
+      <div ng-repeat="question in filteredQuestion(5)">
+      {{question._id}}. {{question.question}}
+      <div class="radio" ng-repeat="choice in question.choices">
         <label>
           <input
-              name="_id{{item._id}}"
-              type="radio"
-              value="{{choice._id}}"
-              ng-model="quiz.userChoiceId4"/>
-          {{choice.choice}}
-        </label>
-      </div>
-    </div>
-    </br>
-    <div ng-repeat="item in filteredQuestion(5)">
-      {{item._id}}. {{item.question}}
-      <div class="radio" ng-repeat="choice in item.choices">
-        <label>
-          <input
-              name="_id{{item._id}}"
+              name="_id{{question._id}}"
               type="radio"
               value="{{choice._id}}"
               ng-model="quiz.userChoiceId5"/>
