@@ -1,6 +1,6 @@
 <div ng-controller="QuizCtrl">
   <form novalidate class="simple-form">
-    <div ng-repeat="item in quiz | filter:{_id:4}">
+    <div ng-repeat="item in filteredQuestion(4)">
       {{item._id}}. {{item.question}}
       <div class="radio" ng-repeat="choice in item.choices">
         <label>
@@ -14,7 +14,7 @@
       </div>
     </div>
     </br>
-    <div ng-repeat="item in quiz | filter:{_id:5}">
+    <div ng-repeat="item in filteredQuestion(5)">
       {{item._id}}. {{item.question}}
       <div class="radio" ng-repeat="choice in item.choices">
         <label>
