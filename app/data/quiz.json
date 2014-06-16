@@ -1,0 +1,167 @@
+{
+  "name"     : "AngularJS Quiz",
+  "questions": [
+    {
+      "_id"     : 1,
+      "question": "AngularJS is written completely in JavaScript",
+      "type"    : "True-false",
+      "answer"  : 1
+    },
+    {
+      "_id"     : 2,
+      "question": "AngularJS 1.0 was released in 2013",
+      "type"    : "True-false",
+      "answer"  : 0
+    },
+    {
+      "_id"     : 3,
+      "question": "AngularJS is best defined as a framework",
+      "type"    : "True-false",
+      "answer"  : 1
+    },
+    {
+      "_id"     : 4,
+      "question": "What does MVC stand for?",
+      "type"    : "Multiple choice",
+      "choices" : [
+        {
+          "_id"   : 1,
+          "choice": "Method, Variable, Constant"
+        },
+        {
+          "_id"   : 2,
+          "choice": "Module, View, Constraint"
+        },
+        {
+          "_id"   : 3,
+          "choice": "Model, View, Controller"
+        },
+        {
+          "_id"   : 4,
+          "choice": "None of the above"
+        }
+      ],
+      "answer"  : 3
+    },
+    {
+      "_id"     : 5,
+      "question": "Who maintains the AngularJS?",
+      "type"    : "Multiple choice",
+      "choices" : [
+        {
+          "_id"   : 1,
+          "choice": "Yahoo!"
+        },
+        {
+          "_id"   : 2,
+          "choice": "Google"
+        },
+        {
+          "_id"   : 3,
+          "choice": "AngularJS.org"
+        },
+        {
+          "_id"   : 4,
+          "choice": "Microsoft"
+        }
+      ],
+      "answer"  : 2
+    },
+    {
+      "_id"     : 6,
+      "question": "What year was AngularJS initially released?",
+      "type"    : "Multiple choice",
+      "choices" : [
+        {
+          "_id"   : 1,
+          "choice": "2009"
+        },
+        {
+          "_id"   : 2,
+          "choice": "2012"
+        },
+        {
+          "_id"   : 3,
+          "choice": "2006"
+        },
+        {
+          "_id"   : 4,
+          "choice": "2014"
+        }
+      ],
+      "answer"  : 1
+    },
+    {
+      "_id"     : 7,
+      "question": "Which of the following are AngularJS 'parts'?",
+      "type"    : "Multiple correct",
+      "choices" : [
+        {
+          "_id"   : 1,
+          "choice": "Controller"
+        },
+        {
+          "_id"   : 2,
+          "choice": "Interface"
+        },
+        {
+          "_id"   : 3,
+          "choice": "Route"
+        },
+        {
+          "_id"   : 4,
+          "choice": "View"
+        },
+        {
+          "_id"   : 5,
+          "choice": "Model"
+        },
+        {
+          "_id"   : 6,
+          "choice": "Generator"
+        },
+        {
+          "_id"   : 7,
+          "choice": "Service"
+        },
+        {
+          "_id"   : 8,
+          "choice": "Node"
+        }
+      ],
+      "answer"  : [1, 3, 4, 5, 7]
+    },
+    {
+      "_id"     : 8,
+      "question": "Which of the following are AngularJS features?",
+      "type"    : "Multiple correct",
+      "choices" : [
+        {
+          "_id"   : 1,
+          "choice": "A complete client-side solution"
+        },
+        {
+          "_id"   : 2,
+          "choice": "Works with most modern web browsers except IE"
+        },
+        {
+          "_id"   : 3,
+          "choice": "Two-way data binding"
+        },
+        {
+          "_id"   : 4,
+          "choice": "Dependency injection"
+        },
+        {
+          "_id"   : 5,
+          "choice": "Full-version of jQuery built in"
+        },
+        {
+          "_id"   : 6,
+          "choice": "Designed to be easily unit-tested"
+        }
+      ],
+      "answer"  : [1, 3, 4, 6]
+    }
+  ]
+}

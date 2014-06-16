@@ -1,0 +1,37 @@
+<div ng-controller="QuizCtrl">
+  <form novalidate class="simple-form">
+    <div ng-repeat="item in quiz | filter:{_id:4}">
+      {{item._id}}. {{item.question}}
+      <div class="radio" ng-repeat="choice in item.choices">
+        <label>
+          <input
+              name="_id{{item._id}}"
+              type="radio"
+              value="{{choice._id}}"
+              ng-model="quiz.userChoiceId4"/>
+          {{choice.choice}}
+        </label>
+      </div>
+    </div>
+    </br>
+    <div ng-repeat="item in quiz | filter:{_id:5}">
+      {{item._id}}. {{item.question}}
+      <div class="radio" ng-repeat="choice in item.choices">
+        <label>
+          <input
+              name="_id{{item._id}}"
+              type="radio"
+              value="{{choice._id}}"
+              ng-model="quiz.userChoiceId5"/>
+          {{choice.choice}}
+        </label>
+      </div>
+    </div>
+    <div>
+      </br>
+      choice 4: {{quiz.userChoiceId4}}
+      </br>
+      choice 5: {{quiz.userChoiceId5}}
+    </div>
+  </form>
+</div>
