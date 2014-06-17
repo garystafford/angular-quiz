@@ -15,7 +15,7 @@ angular.module('angulardataApp')
       $scope.quiz = data.questions;
     });
 
-    $scope.filteredQuestion = function(questionId) {
+    $scope.filteredQuestion = function (questionId) {
       return filterFilter($scope.quiz, {_id: questionId});
-    }
+    };
   });

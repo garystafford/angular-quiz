@@ -1,4 +1,4 @@
-<div ng-repeat="question in filteredQuestion(4)">
+<div ng-repeat="question in $parent.filteredQuestion(filterBy)">
   {{question._id}}. {{question.question}}
   <div class="radio" ng-repeat="choice in question.choices">
     <label>
@@ -6,9 +6,8 @@
           name="_id{{question._id}}"
           type="radio"
           value="{{choice._id}}"
-          ng-model="quiz.userChoiceId4"/>
+          ng-model="question.userChoiceId"/>
       {{choice.choice}}
     </label>
   </div>
 </div>
-</br>

@@ -1,24 +1,24 @@
 <div>
   <form novalidate class="simple-form">
-    <quiz-multiplechoice></quiz-multiplechoice>
-      <div ng-repeat="question in filteredQuestion(5)">
-      {{question._id}}. {{question.question}}
-      <div class="radio" ng-repeat="choice in question.choices">
-        <label>
-          <input
-              name="_id{{question._id}}"
-              type="radio"
-              value="{{choice._id}}"
-              ng-model="quiz.userChoiceId5"/>
-          {{choice.choice}}
-        </label>
-      </div>
-    </div>
-    <div>
-      </br>
-      choice 4: {{quiz.userChoiceId4}}
-      </br>
-      choice 5: {{quiz.userChoiceId5}}
-    </div>
+    <quiz-multiplechoice filter-by="4"></quiz-multiplechoice>
+    </br>
+    <quiz-multiplechoice filter-by="5"></quiz-multiplechoice>
+    </br>
+    choice 4: <span id="answer4"></span>
+    </br>
+    choice 5: {{question.userChoiceId}}
+    </br>
+    <button onclick="$('#answer4').text(getValue());" class="btn btn-sm">Get Answers</button>
   </form>
+  <script type="application/javascript">
+    var getValue = function () {
+      var selected = $("input[type='radio'][name='_id4']:checked");
+      var selectedVal;
+      if (selected.length > 0) {
+        selectedVal = selected.val();
+        console.log(selectedVal);
+        return selectedVal;
+      }
+    }
+  </script>
 </div>

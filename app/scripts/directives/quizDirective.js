@@ -9,7 +9,11 @@
 angular.module('angulardataApp')
   .directive('quizMultiplechoice', function () {
     return {
+      transclude:  true,
+      scope:       {
+        filterBy: '='
+      },
       restrict:    'E',
-      templateUrl: 'scripts/partials/multiple-choice.html'
+      templateUrl: '/scripts/partials/quiz-multiplechoice.html'
     };
   });
