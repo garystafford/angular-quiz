@@ -1,12 +1,13 @@
 <div ng-repeat="question in $parent.filteredQuestion(filterBy)">
   {{question._id}}. {{question.question}}
-  <div class="radio" ng-repeat="choice in question.choices">
+  <div class="radio" ng-repeat="choice in question.choices"
+       ng-init="tempModel='question.userChoiceId' + filterBy">
     <label>
       <input
           name="_id{{question._id}}"
           type="radio"
           value="{{choice._id}}"
-          ng-model="question.userChoiceId"/>
+          ng-model="tempModel"/>
       {{choice.choice}}
     </label>
   </div>
