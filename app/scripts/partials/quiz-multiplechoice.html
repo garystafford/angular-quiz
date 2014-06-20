@@ -1,5 +1,5 @@
 <div ng-repeat="question in $parent.filteredQuestion(filterBy)">
-  {{question._id}}. {{question.question}}
+  <strong>{{question._id}}. {{question.question}}</strong>
   <div class="radio" ng-repeat="choice in question.choices">
     <label>
       <input
@@ -7,11 +7,20 @@
           type="radio"
           value="{{choice._id}}"
           ng-model="question.userChoice"
-          ng-change="$parent.$parent.$parent.checkMultipleChoice(question.answer, question.userChoice)"/>
+          ng-change="$parent.$parent.$parent.checkMultipleChoice(question._id, question.userChoice)"/>
       {{choice.choice}}
     </label>
   </div>
-  User choice: {{question.userChoice}}<br/>
-  Correct answer: {{question.answer}}<br/>
-  Status: <span ng-style="{'color': $parent.$parent.color, 'font-weight': $parent.$parent.fontWeight}">{{$parent.$parent.responseMultipleChoice}}</span><br/>
+  <!--User choice: {{question.userChoice}}<br/>-->
+  <!--Correct answer: {{question.answer}}<br/>-->
+  <div ng-if="$parent.$parent.results[question._id - 1].correct"
+       class="result correct">
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    Correct!
+  </div>
+  <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
+       class="result incorrect">
+    <span class="glyphicon glyphicon-thumbs-down"></span>
+    Incorrect
+  </div>
 </div>
