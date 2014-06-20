@@ -15,6 +15,21 @@ angular.module('angulardataApp')
       $scope.quiz = data.questions;
     });
 
+    $scope.responseMultipleChoice = "";
+    $scope.color = 'red';
+    $scope.fontWeight = 'normal';
+    $scope.checkMultipleChoice = function (answer, userChoice) {
+      if (answer == userChoice) {
+        $scope.responseMultipleChoice = "Correct!";
+        $scope.color = 'seagreen';
+        $scope.fontWeight = 'bold';
+      } else {
+        $scope.responseMultipleChoice = "Incorrect";
+        $scope.color = 'red';
+        $scope.fontWeight = 'normal';
+      }
+    };
+
     $scope.filteredQuestion = function (questionId) {
       return filterFilter($scope.quiz, {_id: questionId});
     };

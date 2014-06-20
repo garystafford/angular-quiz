@@ -3,24 +3,5 @@
     <quiz-multiplechoice filter-by="4"></quiz-multiplechoice>
     </br>
     <quiz-multiplechoice filter-by="5"></quiz-multiplechoice>
-    </br>
-    choice 4: {{question.userChoiceId4}}
-    </br>
-    choice 5: {{question.userChoiceId5}}
-    </br>
-    <button onclick="$('#answer4').text(getValue());" class="btn btn-sm">
-      Get Answers
-    </button>
   </form>
-  <script type="application/javascript">
-    var getValue = function () {
-      var selected = $("input[type='radio'][name='_id4']:checked");
-      var selectedVal;
-      if (selected.length > 0) {
-        selectedVal = selected.val();
-        console.log(selectedVal);
-        return selectedVal;
-      }
-    }
-  </script>
 </div>
