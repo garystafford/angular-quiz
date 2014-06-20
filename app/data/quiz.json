@@ -21,7 +21,7 @@
     },
     {
       "_id":      4,
-      "question": "What does MVC stand for?",
+      "question": "What does the acronym 'MVC' stand for?",
       "type":     "Multiple choice",
       "choices":  [
         {
@@ -45,7 +45,7 @@
     },
     {
       "_id":      5,
-      "question": "Who maintains the AngularJS?",
+      "question": "Who maintains the AngularJS open-source project?",
       "type":     "Multiple choice",
       "choices":  [
         {
@@ -69,7 +69,7 @@
     },
     {
       "_id":      6,
-      "question": "What year was AngularJS initially released?",
+      "question": "In what year was AngularJS initially released?",
       "type":     "Multiple choice",
       "choices":  [
         {
@@ -93,7 +93,7 @@
     },
     {
       "_id":      7,
-      "question": "Which of the following are AngularJS 'parts'?",
+      "question": "Which of the following are associated with AngularJS?",
       "type":     "Multiple correct",
       "choices":  [
         {

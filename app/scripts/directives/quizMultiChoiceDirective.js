@@ -9,7 +9,6 @@
 angular.module('angulardataApp')
   .directive('quizMultiplechoice', function () {
     return {
-      transclude:  true,
       scope:       {
         filterBy: '='
       },
