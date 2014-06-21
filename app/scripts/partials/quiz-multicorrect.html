@@ -7,7 +7,7 @@
         type="checkbox"
         value="{{choice._id}}"
         ng-model="choices.selected"
-        ng-change="$parent.$parent.$parent.checkUserChoice(question._id, choice._id)"/>
+        ng-change="$parent.$parent.$parent.checkUserMultiCorrectChoice(question._id, choice._id)"/>
     <label for="_id{{question._id}}">{{choice.choice}}</label>
   </div>
 

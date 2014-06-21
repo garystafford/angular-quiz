@@ -8,7 +8,7 @@
           type="radio"
           value="{{choice._id}}"
           ng-model="question.userChoice"
-          ng-change="$parent.$parent.$parent.checkUserMultiCorrectChoice(question._id, question.userChoice)"/>
+          ng-change="$parent.$parent.$parent.checkUserChoice(question._id, question.userChoice)"/>
       {{choice.choice}}
     </label>
   </div>
