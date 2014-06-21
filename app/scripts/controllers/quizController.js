@@ -27,7 +27,21 @@ angular.module('angulardataApp')
       }
     });
 
-    $scope.checkMultipleChoice = function (question, userChoice) {
+    // used for multiple correct type questions
+    $scope.checkUserMultiCorrectChoice  = function (question, userChoice) {
+      // assign answer value to results
+      $scope.results[question - 1].userChoice = userChoice;
+
+      // check the answer
+      if ($scope.results[question - 1].answer == userChoice) {
+        $scope.results[question - 1].correct = true;
+      } else {
+        $scope.results[question - 1].correct = false;
+      }
+    };
+
+    // used for multiple choice and true-false type questions
+    $scope.checkUserChoice = function (question, userChoice) {
       // assign answer value to results
       $scope.results[question - 1].userChoice = userChoice;
 

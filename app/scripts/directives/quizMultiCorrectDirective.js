@@ -4,15 +4,15 @@
  * @ngdoc directive
  * @name angulardataApp.directive:quizMultiChoiceDirective
  * @description
- * # quizMultiChoiceDirective
+ * # quizMultiCorrectDirective
  */
 angular.module('angulardataApp')
-  .directive('quizMultichoice', function () {
+  .directive('quizMulticorrect', function () {
     return {
       scope:       {
         filterBy: '='
       },
       restrict:    'E',
-      templateUrl: '/scripts/partials/quiz-multichoice.html'
+      templateUrl: '/scripts/partials/quiz-multicorrect.html'
     };
   });

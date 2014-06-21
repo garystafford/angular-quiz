@@ -8,7 +8,7 @@
           type="radio"
           value="{{choice._id}}"
           ng-model="question.userChoice"
-          ng-change="$parent.$parent.$parent.checkMultipleChoice(question._id, question.userChoice)"/>
+          ng-change="$parent.$parent.$parent.checkUserMultiCorrectChoice(question._id, question.userChoice)"/>
       {{choice.choice}}
     </label>
   </div>
@@ -18,7 +18,7 @@
     <span class="glyphicon glyphicon-thumbs-up"></span>
     Correct!
   </div>
-  
+
   <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
        class="result incorrect">
     <span class="glyphicon glyphicon-thumbs-down"></span>

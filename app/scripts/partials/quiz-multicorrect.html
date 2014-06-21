@@ -1,0 +1,26 @@
+<div ng-repeat="question in $parent.filteredQuestion(filterBy)">
+  <strong>{{question._id}}. {{question.question}}</strong>
+
+  <div class="checkbox" ng-repeat="choice in question.choices">
+    <input
+        name="_id{{question._id}}"
+        type="checkbox"
+        value="{{choice._id}}"
+        ng-model="choices.selected"
+        ng-change="$parent.$parent.$parent.checkUserChoice(question._id, choice._id)"/>
+    <label for="_id{{question._id}}">{{choice.choice}}</label>
+  </div>
+
+  <div ng-if="$parent.$parent.results[question._id - 1].correct"
+       class="result correct">
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    Correct!
+  </div>
+
+  <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
+       class="result incorrect">
+    <span class="glyphicon glyphicon-thumbs-down"></span>
+    Incorrect
+  </div>
+</div>
+<!--ng-model="question.choices[choice]"-->
