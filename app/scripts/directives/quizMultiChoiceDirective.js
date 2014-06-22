@@ -13,6 +13,6 @@ angular.module('angulardataApp')
         filterBy: '='
       },
       restrict:    'E',
-      templateUrl: '/scripts/partials/quiz-multichoice.html'
+      templateUrl: '/scripts/partials/quiz-multi-choice.html'
     };
   });

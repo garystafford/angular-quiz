@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: quizController', function () {
+describe('Controller: QuizCtrl', function () {
 
   // load the controller's module
   beforeEach(module('angulardataApp'));
@@ -11,12 +11,12 @@ describe('Controller: quizController', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    quizController = $controller('quiz-controller', {
+    quizController = $controller('QuizCtrl', {
       $scope: scope
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+    expect(scope.quiz = data.questions.length).toBe(10);
   });
 });

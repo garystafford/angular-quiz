@@ -17,17 +17,5 @@
         ng-change="$parent.$parent.checkUserChoice(question._id, false)"/>
     <label for="_id{{question._id}}">False</label>
   </div>
-
-  <div ng-if="$parent.$parent.results[question._id - 1].correct"
-       class="result correct">
-    <span class="glyphicon glyphicon-thumbs-up"></span>
-    Correct!
-  </div>
-
-  <!--specific false because not true (!) would include null (blank)-->
-  <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
-       class="result incorrect">
-    <span class="glyphicon glyphicon-thumbs-down"></span>
-    Incorrect
-  </div>
+  <div ng-include src="'/scripts/partials/quiz-choice-response.html'"></div>
 </div>

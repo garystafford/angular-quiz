@@ -1,0 +1,12 @@
+<div ng-if="$parent.$parent.$parent.results[question._id - 1].correct"
+     class="result correct">
+  <span class="glyphicon glyphicon-thumbs-up"></span>
+  Correct!
+</div>
+
+<!--specify 'false' because not true (!) would include null (blank)-->
+<div ng-if="$parent.$parent.$parent.results[question._id - 1].correct == false"
+     class="result incorrect">
+  <span class="glyphicon glyphicon-thumbs-down"></span>
+  Incorrect
+</div>
