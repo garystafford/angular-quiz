@@ -1,6 +1,5 @@
 <div ng-repeat="question in $parent.filteredQuestion(filterBy)">
   <strong>{{question._id}}. {{question.question}}</strong>
-
   <div class="radio">
     <input
         name="_id{{question._id}}"
@@ -8,7 +7,8 @@
         value="true"
         ng-model="question.userChoice"
         ng-change="$parent.$parent.checkUserChoice(question._id, true)"/>
-    <label for="_id{{question._id}}">True</label><br/>
+    <label for="_id{{question._id}}">True</label>
+    <br/>
     <input
         name="_id{{question._id}}"
         type="radio"

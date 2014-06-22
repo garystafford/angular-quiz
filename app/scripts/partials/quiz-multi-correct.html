@@ -1,6 +1,5 @@
 <div ng-repeat="question in $parent.filteredQuestion(filterBy)">
   <strong>{{question._id}}. {{question.question}}</strong>
-
   <div class="checkbox" ng-repeat="choice in question.choices">
     <input
         name="_id{{question._id}}"
@@ -12,4 +11,3 @@
   </div>
   <div ng-include src="'/scripts/partials/quiz-choice-response.html'"></div>
 </div>
-<!--ng-model="question.choices[choice]"-->
