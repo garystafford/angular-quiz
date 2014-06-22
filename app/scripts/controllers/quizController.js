@@ -44,9 +44,11 @@ angular.module('angulardataApp')
 
       console.log('answer: ' + $scope.quiz[question - 1].answer.sort());
       console.log('choice: ' + $scope.results[question - 1].userChoice.sort());
+      var answer = JSON.stringify($scope.quiz[question - 1].answer.sort());
+      var choice = JSON.stringify($scope.results[question - 1].userChoice.sort());
 
       // check the answer
-      if ($scope.quiz[question - 1].answer.sort() == $scope.results[question - 1].userChoice.sort()) {
+      if (answer === choice) {
         $scope.results[question - 1].correct = true;
       } else {
         $scope.results[question - 1].correct = false;
