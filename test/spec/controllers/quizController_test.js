@@ -16,7 +16,7 @@ describe('Controller: QuizCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
+  it('should attach a list of questions to the scope', function () {
     expect(scope.quiz = data.questions.length).toBe(10);
   });
 });

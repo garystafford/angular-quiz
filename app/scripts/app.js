@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular.module('angulardataApp', [
-  'ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch'
+  'ngResource', 'ngRoute'
 ]).config(function ($routeProvider) {
   $routeProvider.when('/', {
     templateUrl: 'views/main.html',
