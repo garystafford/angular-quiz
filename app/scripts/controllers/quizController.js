@@ -30,7 +30,7 @@ angular.module('angulardataApp')
     // used for multiple correct type questions
     $scope.checkUserMultiCorrectChoice = function (question, userChoice) {
       // create blank array
-      if ($scope.results[question - 1].userChoice == null) {
+      if ($scope.results[question - 1].userChoice === null) {
         $scope.results[question - 1].userChoice = [];
       }
 
@@ -42,12 +42,10 @@ angular.module('angulardataApp')
         $scope.results[question - 1].userChoice.slice(pos, 1);
       }
 
-      console.log('answer: ' + $scope.quiz[question - 1].answer.sort());
-      console.log('choice: ' + $scope.results[question - 1].userChoice.sort());
+      // check the answer
       var answer = JSON.stringify($scope.quiz[question - 1].answer.sort());
       var choice = JSON.stringify($scope.results[question - 1].userChoice.sort());
 
-      // check the answer
       if (answer === choice) {
         $scope.results[question - 1].correct = true;
       } else {
@@ -61,7 +59,7 @@ angular.module('angulardataApp')
       $scope.results[question - 1].userChoice = userChoice;
 
       // check the answer
-      if ($scope.results[question - 1].answer == userChoice) {
+      if ($scope.results[question - 1].answer === userChoice) {
         $scope.results[question - 1].correct = true;
       } else {
         $scope.results[question - 1].correct = false;

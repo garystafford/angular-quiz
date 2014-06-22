@@ -17,6 +17,7 @@
     Correct!
   </div>
 
+  <!--specific false because not true (!) would include null (blank)-->
   <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
        class="result incorrect">
     <span class="glyphicon glyphicon-thumbs-down"></span>

@@ -2,7 +2,6 @@
   <strong>{{question._id}}. {{question.question}}</strong>
 
   <div class="radio" ng-repeat="choice in question.choices">
-    <label>
       <input
           name="_id{{question._id}}"
           type="radio"
@@ -10,7 +9,7 @@
           ng-model="question.userChoice"
           ng-change="$parent.$parent.$parent.checkUserChoice(question._id, question.userChoice)"/>
       {{choice.choice}}
-    </label>
+    <label for="_id{{question._id}}">{{choice.choice}}</label>
   </div>
 
   <div ng-if="$parent.$parent.results[question._id - 1].correct"
@@ -19,6 +18,7 @@
     Correct!
   </div>
 
+  <!--specific false because not true (!) would include null (blank)-->
   <div ng-if="$parent.$parent.results[question._id - 1].correct == false"
        class="result incorrect">
     <span class="glyphicon glyphicon-thumbs-down"></span>
