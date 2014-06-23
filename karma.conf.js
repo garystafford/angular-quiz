@@ -17,8 +17,8 @@ module.exports = function (config) {
       'bower_components/angular-route/angular-route.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
-      'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      //'test/mock/**/*.js',
+      'test/spec/controllers/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -26,13 +26,13 @@ module.exports = function (config) {
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress'],
+    reporters:  ['progress'],
 
     // web server port
     port:       8092,
 
     // enable / disable colors in the output (reporters and logs)
-    colors: true,
+    colors:     true,
 
 // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG

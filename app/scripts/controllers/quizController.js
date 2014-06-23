@@ -11,6 +11,7 @@ angular.module('angulardataApp')
   .controller('QuizCtrl', function ($scope, quizFactory, filterFilter) {
     $scope.quiz = {}; // quiz questions
     $scope.results = []; // user results
+    $scope.test = "Hello World";
 
     quizFactory.get(function (data) {
       $scope.quiz = data.questions;
