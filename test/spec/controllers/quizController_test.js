@@ -55,16 +55,20 @@ describe('Controller: QuizCtrl', function () {
     $httpBackend.flush();
   }));
 
-  it('should find 2 questions fetched from xhr', function () {
+  it('should find 2 question objects', function () {
     expect(scope.quiz.length).toEqual(2);
   });
 
-  it('should find mock question 1 fetched from xhr', function () {
+  it('should find this exact question 1 object', function () {
     expect(scope.quiz[0]).toEqual({
       "_id":      1,
       "question": "Is this a true-false test?",
       "type":     "True-false",
       "answer":   true
     });
+  });
+
+  it('should find value of 1 for question 2 answer field', function () {
+    expect(scope.quiz[1].answer).toEqual(1);
   });
 });

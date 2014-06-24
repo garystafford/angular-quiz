@@ -13,7 +13,7 @@ describe('Directive: quizDirective', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<quiz></quiz>');
+    element = angular.element('<quiz>this is the quiz directive</quiz>');
     element = $compile(element)(scope);
     expect(element.text()).toBe('this is the quiz directive');
   }));
