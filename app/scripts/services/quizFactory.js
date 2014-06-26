@@ -9,5 +9,5 @@
  */
 angular.module('angulardataApp')
   .factory('quizFactory', function ($resource) {
-    return $resource('./data/quiz.json');
+    return $resource('./data/quiz-advanced.json');
   });

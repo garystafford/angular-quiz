@@ -1,0 +1,35 @@
+{
+  "name":      "AngularJS Quiz - Basic",
+  "questions": [
+    {
+      "_id":      1,
+      "question": "AngularJS is a declarative programming language.",
+      "answer":   true
+    },
+    {
+      "_id":      2,
+      "question": "The acronym 'SPA' stands for Single-Page Application.",
+      "answer":   true
+    },
+    {
+      "_id":      3,
+      "question": "AngularJS is written in C++.",
+      "answer":   false
+    },
+    {
+      "_id":      4,
+      "question": "AngularJS wss created in 2009 by Miško Hevery and Adam Abrons at Brat Tech LLC.",
+      "answer":   true
+    },
+    {
+      "_id":      5,
+      "question": "The 'M' in the MEAN stack, stands for MongoDB.",
+      "answer":   true
+    },
+    {
+      "_id":      6,
+      "question": "AngularJS is best defined as a JavaScript library.",
+      "answer":   false
+    }
+  ]
+}

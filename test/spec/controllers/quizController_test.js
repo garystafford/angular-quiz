@@ -12,7 +12,7 @@ describe('Controller: QuizCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, _$httpBackend_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expect('GET', './data/quiz.json').respond({
+    $httpBackend.expect('GET', './data/quiz-advanced.json').respond({
       "questions": [
         {
           "_id":      1,
