@@ -8,8 +8,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/ng-table/ng-table.css" />
+  <link rel="stylesheet"
+        href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/ng-table/ng-table.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -31,7 +32,7 @@
       <li><a ng-href="#/about">About</a></li>
       <li><a ng-href="#">Contact</a></li>
     </ul>
-    <h3 class="text-muted">angulardata</h3>
+    <h3 class="text-muted">AngularJS Quiz</h3>
   </div>
 
   <div ng-view=""></div>
@@ -86,8 +87,10 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
-<script src="scripts/controllers/quizController.js"></script>
-<script src="scripts/services/quizFactory.js"></script>
+<script src="scripts/controllers/quizBasicController.js"></script>
+<script src="scripts/controllers/quizAdvancedController.js"></script>
+<script src="scripts/services/quizAdvancedFactory.js"></script>
+<script src="scripts/services/quizBasicFactory.js"></script>
 <script src="scripts/directives/quizMultiChoiceDirective.js"></script>
 <script src="scripts/directives/quizMultiCorrectDirective.js"></script>
 <script src="scripts/directives/quizTrueFalseDirective.js"></script>

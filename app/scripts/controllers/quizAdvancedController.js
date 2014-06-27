@@ -2,21 +2,25 @@
 
 /**
  * @ngdoc function
- * @name angulardataApp.controller:QuizCtrl
+ * @name angulardataApp.controller:QuizAdvancedController
  * @description
  * # QuizCtrl
  * Controller of the angulardataApp
  */
 angular.module('angulardataApp')
-  .controller('QuizCtrl', function ($scope, quizFactory, filterFilter) {
+  .controller('QuizAdvancedController',
+  function ($scope, quizAdvancedFactory, filterFilter) {
+    var createResults;
     $scope.quiz = {}; // quiz questions
     $scope.results = []; // user results
-    $scope.test = "Hello World";
 
-    quizFactory.get(function (data) {
+    quizAdvancedFactory.get(function (data) {
       $scope.quiz = data.questions;
+      createResults();
+    });
 
-      // prepare array of result objects
+    // prepare array of result objects
+    createResults = function () {
       var len = $scope.quiz.length;
       for (var i = 0; i < len; i++) {
         $scope.results.push({
@@ -26,7 +30,7 @@ angular.module('angulardataApp')
           correct:    null
         });
       }
-    });
+    };
 
     // used for multiple correct type questions
     $scope.checkUserMultiCorrectChoice = function (question, userChoice) {
@@ -43,7 +47,7 @@ angular.module('angulardataApp')
         $scope.results[question - 1].userChoice.slice(pos, 1);
       }
 
-      // check the answer
+      // check the user's choice against the answer
       var answer = JSON.stringify($scope.quiz[question - 1].answer.sort());
       var choice = JSON.stringify($scope.results[question - 1].userChoice.sort());
 
@@ -56,10 +60,10 @@ angular.module('angulardataApp')
 
     // used for multiple choice and true-false type questions
     $scope.checkUserChoice = function (question, userChoice) {
-      // assign answer value to results
+      // assign the user's choice to userChoice
       $scope.results[question - 1].userChoice = userChoice;
 
-      // check the answer
+      // check the user's choice against the answer
       if ($scope.results[question - 1].answer === userChoice) {
         $scope.results[question - 1].correct = true;
       } else {

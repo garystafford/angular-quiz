@@ -1,0 +1,40 @@
+<div ng-repeat="question in quiz">
+  <strong>{{question._id}}. {{question.question}}</strong>
+
+  <div class="radio">
+    <input
+        name="_id{{question._id}}"
+        type="radio"
+        value="true"
+        ng-model="question.userChoice"
+        ng-change="$parent.checkUserChoice(question._id, true)"/>
+    <label for="_id{{question._id}}">True</label>
+    <br/>
+    <input
+        name="_id{{question._id}}"
+        type="radio"
+        ng-value="false"
+        ng-model="question.userChoice"
+        ng-change="$parent.checkUserChoice(question._id, false)"/>
+    <label for="_id{{question._id}}">False</label>
+  </div>
+</div>
+
+<hr/>
+
+<div ng-init="showAnswers=true">
+  <button class="btn btn-primary btn-sm" ng-click="showAnswers=false">
+    Show Results
+  </button>
+  <br/>
+  <br/>
+
+  <div ng-hide="showAnswers">
+    <strong>Results</strong>
+
+    <div ng-repeat="result in results">
+      {{result._id}}. {{result.correct}}
+    </div>
+  </div>
+</div>
+

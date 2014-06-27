@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name angulardataApp.quizFactory
+ * @name angulardataApp.quizAdvancedFactory
  * @description
  * # quizFactory
  * Factory in the angulardataApp.
  */
 angular.module('angulardataApp')
-  .factory('quizFactory', function ($resource) {
+  .factory('quizAdvancedFactory', function ($resource) {
     return $resource('./data/quiz-advanced.json');
   });

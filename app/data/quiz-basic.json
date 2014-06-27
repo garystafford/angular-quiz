@@ -18,7 +18,7 @@
     },
     {
       "_id":      4,
-      "question": "AngularJS wss created in 2009 by Miško Hevery and Adam Abrons at Brat Tech LLC.",
+      "question": "AngularJS was created at Brat Tech LLC.",
       "answer":   true
     },
     {

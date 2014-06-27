@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: quizDirective', function () {
+describe('Directive: quizTrueFalseDirective', function () {
 
   // load the directive's module
   beforeEach(module('angulardataApp',

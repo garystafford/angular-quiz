@@ -1,11 +1,11 @@
 'use strict';
 
-describe('Controller: QuizCtrl', function () {
+describe('Controller: QuizAdvancedController', function () {
 
   // load the controller's module
   beforeEach(module('angulardataApp'));
 
-  var QuizCtrl,
+  var quizAdvancedController,
       scope,
       $httpBackend;
 
@@ -48,7 +48,7 @@ describe('Controller: QuizCtrl', function () {
     });
 
     scope = $rootScope.$new();
-    QuizCtrl = $controller('QuizCtrl', {
+    quizAdvancedController = $controller('QuizAdvancedController', {
       $scope: scope
     });
 
