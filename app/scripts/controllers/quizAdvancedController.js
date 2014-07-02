@@ -11,10 +11,12 @@ angular.module('angulardataApp')
   .controller('QuizAdvancedController',
   function ($scope, quizAdvancedFactory, filterFilter) {
     var createResults;
+    $scope.title = null; // quiz title
     $scope.quiz = {}; // quiz questions
     $scope.results = []; // user results
 
     quizAdvancedFactory.get(function (data) {
+      $scope.title = data.name;
       $scope.quiz = data.questions;
       createResults();
     });

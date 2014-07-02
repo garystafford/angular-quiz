@@ -95,4 +95,8 @@ body {
     .correct {
         color: seagreen;
     }
+
+    .title {
+        color: #999;
+    }
 }
