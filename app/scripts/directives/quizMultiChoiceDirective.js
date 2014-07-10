@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angulardataApp.directive:quizMultiChoiceDirective
+ * @name quizModule.directive:quizMultiChoiceDirective
  * @description
  * # quizMultiChoiceDirective
  */
-angular.module('angulardataApp')
+angular.module('quizModule')
   .directive('quizMultichoice', function () {
     return {
       scope:       {

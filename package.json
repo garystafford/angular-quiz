@@ -1,5 +1,5 @@
 {
-  "name": "angulardata",
+  "name": "quizApp",
   "version": "0.0.0",
   "dependencies": {
     "grunt-autoprefixer": "^0.7.6",

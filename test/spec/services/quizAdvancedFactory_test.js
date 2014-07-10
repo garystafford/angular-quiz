@@ -3,7 +3,7 @@
 describe('Service: quizAdvancedFactory', function () {
 
   // load the service's module
-  beforeEach(module('angulardataApp'));
+  beforeEach(module('quizModule'));
 
   // instantiate service
   var quizAdvancedFactory;

@@ -3,7 +3,7 @@
 describe('Directive: quizTrueFalseDirective', function () {
 
   // load the directive's module
-  beforeEach(module('angulardataApp',
+  beforeEach(module('quizModule',
     'app/scripts/partials/quiz-true-false.html'));
 
   var template,

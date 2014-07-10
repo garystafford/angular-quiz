@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angulardataApp.controller:QuizAdvancedController
+ * @name quizModule.controller:QuizAdvancedController
  * @description
  * # QuizCtrl
- * Controller of the angulardataApp
+ * Controller of the quizModule
  */
-angular.module('angulardataApp')
+angular.module('quizModule')
   .controller('QuizAdvancedController',
   function ($scope, quizAdvancedFactory, filterFilter) {
     var createResults;

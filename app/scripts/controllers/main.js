@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angulardataApp.controller:MainCtrl
+ * @name quizModule.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the angulardataApp
+ * Controller of the quizModule
  */
-angular.module('angulardataApp')
+angular.module('quizModule')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate', 'AngularJS', 'Karma'

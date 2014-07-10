@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc overview
- * @name angulardataApp
+ * @name quizModule
  * @description
- * # angulardataApp
+ * # quizModule
  *
  * Main module of the application.
  */
-angular.module('angulardataApp', [
+angular.module('quizModule', [
   'ngResource', 'ngRoute'
 ]).config(function ($routeProvider, $locationProvider) {
   $routeProvider.when('/', {

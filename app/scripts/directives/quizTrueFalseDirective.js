@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angulardataApp.directive:quizTrueFalseDirective
+ * @name quizModule.directive:quizTrueFalseDirective
  * @description
  * # quizTrueFalseDirective
  */
-angular.module('angulardataApp')
+angular.module('quizModule')
   .directive('quizTruefalse', function () {
     return {
       scope:       {

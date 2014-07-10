@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angulardataApp'));
+  beforeEach(module('quizModule'));
 
   var AboutCtrl,
     scope;
