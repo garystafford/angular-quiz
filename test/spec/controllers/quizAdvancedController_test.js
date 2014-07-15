@@ -13,36 +13,36 @@ describe('Controller: QuizAdvancedController', function () {
   beforeEach(inject(function ($controller, $rootScope, _$httpBackend_) {
     $httpBackend = _$httpBackend_;
     $httpBackend.expect('GET', './data/quiz-advanced.json').respond({
-      "questions": [
+      'questions': [
         {
-          "_id":      1,
-          "question": "Is this a true-false test?",
-          "type":     "True-false",
-          "answer":   true
+          '_id':      1,
+          'question': 'Is this a true-false test?',
+          'type':     'True-false',
+          'answer':   true
         },
         {
-          "_id":      2,
-          "question": "Which is a type of test?",
-          "type":     "Multiple choice",
-          "choices":  [
+          '_id':      2,
+          'question': 'Which is a type of test?',
+          'type':     'Multiple choice',
+          'choices':  [
             {
-              "_id":    1,
-              "choice": "unit-test"
+              '_id':    1,
+              'choice': 'unit-test'
             },
             {
-              "_id":    2,
-              "choice": "wrong answer"
+              '_id':    2,
+              'choice': 'wrong answer'
             },
             {
-              "_id":    3,
-              "choice": "also wrong answer"
+              '_id':    3,
+              'choice': 'also wrong answer'
             },
             {
-              "_id":    4,
-              "choice": "also wrong answer"
+              '_id':    4,
+              'choice': 'also wrong answer'
             }
           ],
-          "answer":   1
+          'answer':   1
         }
       ]
     });
@@ -61,10 +61,10 @@ describe('Controller: QuizAdvancedController', function () {
 
   it('should find this exact question 1 object', function () {
     expect(scope.quiz[0]).toEqual({
-      "_id":      1,
-      "question": "Is this a true-false test?",
-      "type":     "True-false",
-      "answer":   true
+      '_id':      1,
+      'question': 'Is this a true-false test?',
+      'type':     'True-false',
+      'answer':   true
     });
   });
 

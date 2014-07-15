@@ -1,5 +1,7 @@
 <h4 class="title">{{title}}</h4>
 <br/>
+
+<!--quiz section-->
 <form name="quiz">
   <div ng-repeat="question in quiz">
     <strong>{{question._id}}. {{question.question}}</strong>
@@ -22,26 +24,27 @@
       <label for="_id{{question._id}}">False</label>
     </div>
   </div>
+</form>
 
-  <hr/>
+<hr/>
 
-  <div ng-init="showAnswers=true">
-    <button class="btn btn-primary btn-sm"
-            ng-click="showAnswers=checkQuizCompleted()">
-      Show Results
-    </button>
-    <br/>
-    <br/>
+<!--results section-->
+<div ng-init="showAnswers=true">
+  <button class="btn btn-primary btn-sm"
+          ng-click="showAnswers=checkQuizCompleted()">
+    Show Results
+  </button>
+  <br/>
+  <br/>
 
-    <div ng-hide="showAnswers">
-      <strong>Results</strong>
+  <div ng-hide="showAnswers">
+    <strong>Results</strong>
 
-      <div ng-repeat="result in results">
-        {{result._id}}. <span
-          ng-class="result.correct == 'Correct' ? 'correct' : 'incorrect'">
+    <div ng-repeat="result in results">
+      {{result._id}}. <span
+        ng-class="result.correct == 'Correct' ? 'correct' : 'incorrect'">
         {{result.correct}}
       </span>
-      </div>
     </div>
   </div>
-</form>
+</div>
