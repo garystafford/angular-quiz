@@ -25,6 +25,10 @@ AngularJS-based Quiz project for blog post, [Data-Driven Form Design with Angula
 Install GitHub project
 ```
 git clone https://github.com/garystafford/angular-quiz.git
+git clone https://github.com/garystafford/angular-quiz.git
+cd angular-data
+npm install
+bower install
 ```
 
 Install base project using generator-angular
@@ -48,6 +52,6 @@ david update
 ```
 
 ####TO-DO's
-* Document project requirements and installation
 * Document project features and objectives
-* Add functionality to save multiple results to file with username and timestamp
+* Add functionality to save results to file with username and timestamp
+* Add functionality to use charting (chartjs) and graphing (d3).

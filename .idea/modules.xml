@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/angular-data.iml" filepath="$PROJECT_DIR$/.idea/angular-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/quiz-app.iml" filepath="$PROJECT_DIR$/.idea/quiz-app.iml" />
     </modules>
   </component>
 </project>
