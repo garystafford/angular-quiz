@@ -7,26 +7,32 @@
 AngularJS-based Quiz project for blog post, [Data-Driven Form Design with AngularJS's Two-Way Data Binding and Custom Directives](http://wp.me/p1RD28-1eo). Uses two-way data binding and custom directives to create and display a quiz, with multiple types of questions, from a JSON file.
 
 ####Highlights
-* Project based on [Yeoman generator for AngularJS] (http://yeoman.io). Installed using npm generator-angular -g.
-* Reads JSON data files, using a factory services, containing quiz data: questions, choices, answer, etc.
-* Displays questions dynamically based on question type: multiple choice, multiple correct, or true-false, using custom directives.
-* Uses single controller and single view with multiple directives and partial HTML files for each question type.
-* Demonstrates the use of filtering within controller, use of custom directives, and the use of partials.
+* Project based on [Yeoman generator for AngularJS] (http://yeoman.io).
+* Basic and advanced quiz examples. Read the blog post for more information.
+* Reads JSON data files, using a $resource in factory services.
+* JSON files contain quiz data: questions, choices, answer, etc.
+* Displays questions based on question type: multiple choice, multiple correct, or true-false, using custom directives.
+* Demonstrates the use of an Angular filter, custom directives, and the use of partials view templates.
 
 ####Installation
-install github project
-
-```bash
+Install GitHub project
+```
 git clone https://github.com/garystafford/angular-quiz.git
 ```
 
-install base project using generator
-
-```bash
-npm install -g generator-angular
-mkdir project_name_here && cd $_
-yo angular app_name_here
+Install base project using generator-angular
 ```
+npm install -g generator-angular
+mkdir quizApp && cd $_
+yo angular quizApp
+yo angular:route quizAdvanced
+yo angular:factory quizAdvancedFactory
+yo angular:directive quizTrueFalseDirective
+```
+
+Start Project `grunt serve`
+
+Test Project `grunt test`
 
 ####TO-DO's
 * Document project requirements and installation
