@@ -34,6 +34,10 @@ Start Project `grunt serve`
 
 Test Project `grunt test`
 
+Update Dependencies within Project
+`npm install david`
+`david update`
+
 ####TO-DO's
 * Document project requirements and installation
 * Document project features and objectives
