@@ -1,5 +1,5 @@
 {
-  "name":      "Basic Quiz Example",
+  "title":      "Basic Quiz Example",
   "questions": [
     {
       "_id":      1,

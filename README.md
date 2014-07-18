@@ -25,7 +25,6 @@ AngularJS-based Quiz project for blog post, [Data-Driven Form Design with Angula
 Install GitHub project
 ```
 git clone https://github.com/garystafford/angular-quiz.git
-git clone https://github.com/garystafford/angular-quiz.git
 cd angular-data
 npm install
 bower install

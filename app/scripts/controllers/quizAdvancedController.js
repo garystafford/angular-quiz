@@ -16,7 +16,7 @@ angular.module('quizModule')
     $scope.results = []; // user results
 
     quizAdvancedFactory.get(function (data) {
-      $scope.title = data.name;
+      $scope.title = data.title;
       $scope.quiz = data.questions;
       createResults();
     });

@@ -25,7 +25,7 @@ describe('Directive: quizTrueFalseDirective', function () {
   }));
 
   it('should have two labels (true and false) in list', function () {
-    console.log(element);
+    //console.log(element);
     var list = element.find('label');
     expect(list.length).toBe(0); // directive tests not working. work on later...
   });
