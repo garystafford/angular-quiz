@@ -14,6 +14,13 @@ AngularJS-based Quiz project for blog post, [Data-Driven Form Design with Angula
 * Displays questions based on question type: multiple choice, multiple correct, or true-false, using custom directives.
 * Demonstrates the use of an Angular filter, custom directives, and the use of partials view templates.
 
+####Requirements
+* git
+* npm (part of Node.js)
+* Yeoman (yo, Bower, Grunt)
+* PhantomJS (optional - Karma unit tests)
+* David (optional - dependency management)
+
 ####Installation
 Install GitHub project
 ```
@@ -34,9 +41,11 @@ Start Project `grunt serve`
 
 Test Project `grunt test`
 
-Update Dependencies within Project
-`npm install david`
-`david update`
+Update npm dependencies within project (use [david-dm.org](david-dm.org))
+```
+npm install -g david
+david update
+```
 
 ####TO-DO's
 * Document project requirements and installation
