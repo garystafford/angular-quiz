@@ -4,7 +4,7 @@
  * @ngdoc function
  * @name quizModule.controller:QuizAdvancedController
  * @description
- * # QuizCtrl
+ * # QuizAdvancedController
  * Controller of the quizModule
  */
 angular.module('quizModule')
@@ -12,7 +12,7 @@ angular.module('quizModule')
   function ($scope, quizAdvancedFactory, filterFilter) {
     var createResults;
     $scope.title = null; // quiz title
-    $scope.quiz = {}; // quiz questions
+    $scope.quiz = []; // quiz questions
     $scope.results = []; // user results
 
     quizAdvancedFactory.get(function (data) {

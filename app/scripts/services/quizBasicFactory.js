@@ -4,7 +4,7 @@
  * @ngdoc service
  * @name quizModule.quizBasicFactory
  * @description
- * # quizFactory
+ * # quizBasicFactory
  * Factory in the quizModule.
  */
 angular.module('quizModule')

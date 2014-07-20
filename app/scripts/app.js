@@ -18,10 +18,10 @@ angular.module('quizModule', [
     templateUrl: 'views/about.html',
     controller:  'AboutCtrl'
   }).when('/quizAdvanced', {
-    templateUrl: '../views/quiz-advanced.html',
+    templateUrl: 'views/quiz-advanced.html',
     controller:  'QuizAdvancedController'
   }).when('/quizBasic', {
-    templateUrl: '../views/quiz-basic.html',
+    templateUrl: 'views/quiz-basic.html',
     controller:  'QuizBasicController'
   }).otherwise({
     redirectTo: '/'
