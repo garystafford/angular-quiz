@@ -25,7 +25,7 @@ AngularJS-based Quiz project for blog post, [Data-Driven Form Design with Angula
 Install GitHub project
 ```
 git clone https://github.com/garystafford/angular-quiz.git
-cd angular-data
+cd angular-quiz
 npm install
 bower install
 ```
@@ -33,8 +33,8 @@ bower install
 Install base project using generator-angular
 ```
 npm install -g generator-angular
-mkdir quizApp && cd $_
-yo angular quizApp
+mkdir quiz-app && cd $_
+yo angular quiz
 yo angular:route quizAdvanced
 yo angular:factory quizAdvancedFactory
 yo angular:directive quizTrueFalseDirective
