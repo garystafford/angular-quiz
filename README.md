@@ -56,4 +56,4 @@ david update
 * Add functionality to use charting (chartjs) and graphing (d3).
 
 ####Preview
-![Chrome on Android](https://github.com/garystafford/meanstack-data-samples/blob/master/public/app/images/AndroidPreview.png?raw=true)
+![Chrome on Android](https://github.com/garystafford/angular-quiz/blob/master/public/app/images/AndroidPreview.png?raw=true)
