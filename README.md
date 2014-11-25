@@ -3,6 +3,7 @@
 <a href='https://david-dm.org/garystafford/angular-quiz#info=devDependencies'><img src='https://david-dm.org/garystafford/angular-quiz/dev-status.png'></a>
 
 ##AngularJS Dynamic Quiz Example
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/garystafford/angular-quiz?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 AngularJS-based Quiz project for blog post, [Data-Driven Form Design with AngularJS's Two-Way Data Binding and Custom Directives](http://wp.me/p1RD28-1eo). Uses two-way data binding and custom directives to create and display a quiz, with multiple types of questions, from a JSON file.
 
